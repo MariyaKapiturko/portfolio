@@ -1,6 +1,11 @@
 .text-center {
   text-align: center;
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: about;
+}
 *,
 *:before,
 *:after {
@@ -131,7 +136,7 @@ body {
   position: absolute;
   height: 493px;
   bottom: 0;
-  right: 45px;
+  right: 100px;
   z-index: 1;
 }
 .social {
@@ -187,7 +192,7 @@ body {
   border: 2px solid #2b3a2c;
 }
 .works {
-  padding: 2.8rem 0;
+  margin: 2.8rem 0;
 }
 .works__nav {
   display: flex;
@@ -212,11 +217,6 @@ body {
 .work:hover {
   cursor: pointer;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-}
-.work__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 .work__content {
   padding: 1rem 0.8rem;
@@ -243,4 +243,58 @@ body {
 .portfolio__col {
   flex-basis: 33.3%;
   padding: 1rem;
+}
+.about {
+  margin: 8.4rem 0;
+}
+.about__inner {
+  display: flex;
+  max-width: 1090px;
+}
+.about__photo {
+  position: relative;
+  width: 50%;
+}
+.about__photo img {
+  position: relative;
+  z-index: 2;
+  height: 606px;
+}
+.about__photo:before {
+  content: '';
+  width: 413px;
+  height: 413px;
+  background-color: #efefef;
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  z-index: 1;
+}
+.about__content {
+  width: 50%;
+  padding-left: 3.2rem;
+  margin-top: 2rem;
+}
+.about__title {
+  font-size: 3rem;
+  color: #2b3a2c;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about__bigtitle {
+  margin-bottom: 1.4rem;
+  position: relative;
+  left: -15px;
+  font-size: 6.1rem;
+  line-height: 1.1;
+  color: rgba(43, 58, 44, 0.15);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about__text {
+  margin-bottom: 2.8rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #6a696b;
+  font-weight: 300;
 }
