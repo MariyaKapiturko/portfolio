@@ -358,3 +358,57 @@ body {
 .rewiews__star--unactive {
   opacity: 0.3;
 }
+.news {
+  margin-top: 14rem;
+}
+.news__header {
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+.news__title {
+  margin-bottom: 0.3rem;
+  font-size: 3rem;
+  color: #2b3a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.news__text {
+  font-size: 1.2rem;
+  color: #8d8d8e;
+  font-weight: 300;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.articles__col {
+  width: 33.3%;
+  padding: 0 1rem;
+}
+.articles__header {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+.articles__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 77px;
+  background-color: #2b3a2c;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.06rem;
+  line-height: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.articles__title {
+  font-size: 1.2rem;
+  color: #2b3a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
