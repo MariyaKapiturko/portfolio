@@ -33,9 +33,6 @@ body {
   font-size: 1rem;
   color: #272628;
 }
-body.no-scroll {
-  overflow: hidden;
-}
 .container {
   width: 100%;
   max-width: 1200px;
