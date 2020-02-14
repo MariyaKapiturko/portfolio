@@ -11,7 +11,7 @@
   <title>Mariya Kapiturko's portfolio</title>
 </head>
 
-<body>
+<body class="no-scroll">
 
   <header class="header">
     <div class="container">
@@ -317,7 +317,7 @@
             <a href="" class="btn btn--sm">Read more</a>
           </div>
         </div>
-         <div class="articles__col">
+        <div class="articles__col">
           <div class="articles__item">
             <div class="articles__header">
               <time class="articles__date">13 <br>june</time>
@@ -371,6 +371,58 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog">
+      <button type="button" class="modal__close"><img src="img/modal-close.svg" alt="Close"></button>
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="https://placehold.it/790x780" alt="Work">
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">Project title</h3>
+            <div class="modal-work__info">
+              category <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Client:</div>
+            <div class="modal-work__client-company">Creative Agency</div>
+          </div>
+          <div class="modal-work__text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis, dolores blanditiis soluta
+              distinctio consequuntur quod accusamus ratione autem iure. Quibusdam iste, mollitia aspernatur consequatur
+              hic adipisci explicabo repudiandae eaque.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis, dolores blanditiis soluta
+              distinctio consequuntur quod accusamus ratione autem iure. Quibusdam iste, mollitia aspernatur consequatur
+              hic adipisci explicabo repudiandae eaque.
+            </p>
+          </div>
+          <div class="modal-work__footer">
+            <button type="button" class="modal-work__footer-btn"><img src="img/left-arrow.svg" height="12px" alt="Arrow">Previous</button>
+            <button type="button" class="modal-work__footer-btn">Next<img src="img/right-arrow.svg" height="12px" alt="Arrow"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__ dialog modal__dialog--sm">
+      <button type="button" class="modal__close"><img src="img/modal-close.svg" alt="Close"></button>
+      <div class="modal__content">
+        <img class="img" src="img/resume.jpg" alt="Resume">
+        <div class="text-center">
+          <a class="btn btn--thin" href="#">Download PDF</a>
+          <a class="btn btn--thin" href="#">Print</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="js/main.js"></script>
