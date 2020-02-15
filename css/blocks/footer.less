@@ -3,60 +3,65 @@
 .footer {
   padding: 1rem 0;
   background-color: @black;
-}
 
-.foter__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__credits {
-  display: flex;
-  align-items: center;
-}
-
-.footer__copyright {
-  padding-right: .8rem;
-  margin-right: 1rem;
-  font-size: .94rem;
-  color: #bbbbcc;
-  border-right: 2px solid rgba(@gray, .5);
-}
-
-.footer__socials {
-  display: flex;
-  align-items: center;
-  a {
-    margin-right: 1.2rem;
-    text-decoration: none;
+  &__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
   }
-}
 
-.footer__nav {
-  display: flex;
-  align-items: center;
-  font-size: .94rem;
-}
-
-.footer__nav-link {
-  margin-left: 1.5rem;
-  color: #bbbbcc; 
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
+  &__credits {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
   }
-  &--btn {
-    padding: .5rem 1.4rem;
-    border-radius: 20px;
-    border: 1px solid @gray-light;
-    line-height: 1.1;
 
-    &:hover {
+  &__copyright {
+    padding-right: .8rem;
+    margin-right: 1rem;
+    font-size: .94rem;
+    color: #bbbbcc;
+    border-right: 2px solid rgba(@gray, .5);
+  }
+
+  &__socials {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    a {
+      margin-right: 1.2rem;
       text-decoration: none;
-      background-color: #bbbbcc;
-      border-color: #bbbbcc;
-      color: @black;
+    }
+  }
+
+  &__nav {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    font-size: .94rem;
+    &-link {
+      margin-left: 1.5rem;
+      color: #bbbbcc; 
+      text-decoration: none;      
+      &:hover {
+        text-decoration: underline;
+      }
+      &--btn {
+        padding: .5rem 1.4rem;
+        border-radius: 20px;
+        border: 1px solid @gray-light;
+        line-height: 1.1;      
+        &:hover {
+          text-decoration: none;
+          background-color: #bbbbcc;
+          border-color: #bbbbcc;
+          color: @black;
+        }
+      }
     }
   }
 }

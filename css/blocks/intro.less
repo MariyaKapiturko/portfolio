@@ -1,41 +1,44 @@
 //  main: ../style.less
 
-.intro__inner {
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 120px;
-  position: relative;
-  background: url('../img/symbols.png') right bottom no-repeat;
-  border-bottom: 1px solid rgba(@gray, .3);
-}
+.intro {
+  &__inner {
+    display: -webkit-box;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+    background: url('../img/symbols.png') right bottom no-repeat;
+    border-bottom: 1px solid rgba(@gray, .3);
+  }
 
-.intro__content {
-  width: 50%;
-}
+  &__content {
+    width: 50%;
+  }
 
-.intro__subtitle {
-  font-size: 2.13rem;
-  color: @black;
-  font-weight: 200;
-}
+  &__subtitle {
+    font-size: 2.13rem;
+    color: @black;
+    font-weight: 200;
+  }
+  
+  &__title {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+  }
 
-.intro__title {
-  margin-bottom: 5px;
-  font-size: 3rem;
-  color: @black;
-  font-weight: 700;
-}
+  &__text {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    color: rgba(@black, .7);
+  }
 
-.intro__text {
-  margin-bottom: 25px;
-  font-size: 1.2rem;
-  color: rgba(@black, .7);
-}
-
-.intro__photo {
-  position: absolute;
-  height: 493px;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+  &__photo {
+    position: absolute;
+    height: 493px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }

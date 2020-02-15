@@ -1,22 +1,28 @@
 //  main: ../style.less
 
 .social {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin-bottom: 42px;
-}
 
-.social__link {
-  text-decoration: none;
-  margin-right: 10px;
-  transition: transform .2s linear;
+  &__link {
+    text-decoration: none;
+    margin-right: 10px;
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
+    
+    &:hover {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
 
-  &:hover {
-    transform: translateY(-10px);
+    img {
+      width: 35px;
+      height: 35px;
+    }
   }
-}
-
-.social__link img {
-  width: 35px;
-  height: 35px;
 }

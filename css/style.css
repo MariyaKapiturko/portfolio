@@ -1,6 +1,9 @@
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .img {
   display: block;
   max-width: 100%;
@@ -44,11 +47,15 @@ body {
   padding: 1.2rem 0;
 }
 .header__inner {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
 }
 .user {
+  display: -webkit-box;
   display: flex;
 }
 .user__avatar img {
@@ -57,6 +64,7 @@ body {
 }
 .user__content {
   padding-left: 9px;
+  -webkit-box-align: center;
   align-items: center;
 }
 .user__name {
@@ -113,6 +121,7 @@ body {
   color: #ffffff;
 }
 .intro__inner {
+  display: -webkit-box;
   display: flex;
   padding-top: 100px;
   padding-bottom: 120px;
@@ -147,16 +156,22 @@ body {
   z-index: 1;
 }
 .social {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   margin-bottom: 42px;
 }
 .social__link {
   text-decoration: none;
   margin-right: 10px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .social__link:hover {
+  -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 .social__link img {
@@ -179,6 +194,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-color 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-color 0.2s linear;
 }
 .btn:focus {
@@ -209,7 +225,9 @@ body {
   margin: 2.8rem 0;
 }
 .works__nav {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   margin-bottom: 1.4rem;
 }
@@ -226,6 +244,7 @@ body {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
 }
 .work:hover {
@@ -235,14 +254,16 @@ body {
 .work__content {
   padding: 1rem 0.8rem;
 }
-.work__cat {
+.work__category {
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
   color: #272628;
   text-transform: uppercase;
 }
 .work__title {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   font-size: 1.06rem;
   color: #272628;
@@ -250,6 +271,7 @@ body {
   font-weight: 700;
 }
 .portfolio {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem 2.8rem;
@@ -262,6 +284,7 @@ body {
   margin: 8.4rem 0;
 }
 .about__inner {
+  display: -webkit-box;
   display: flex;
   max-width: 1090px;
 }
@@ -326,7 +349,7 @@ body {
   font-size: 0.94rem;
   line-height: 2.2;
   color: #ffffff;
-  text-align: justify ;
+  text-align: justify;
 }
 .reviews__author {
   width: 100%;
@@ -358,11 +381,64 @@ body {
   font-style: italic;
   font-weight: 300;
 }
-.rewiews__star {
+.reviews__star {
   width: 13px;
   height: 13px;
 }
-.rewiews__star--unactive {
+.reviews__star--unactive {
+  opacity: 0.3;
+}
+.reviews {
+  padding: 4.6rem 0;
+  position: relative;
+  background: #332f30 url('../../img/background-symbols.png') center no-repeat;
+}
+.reviews__item {
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+}
+.reviews__text {
+  font-size: 0.94rem;
+  line-height: 2.2;
+  color: #ffffff;
+  text-align: justify;
+}
+.reviews__author {
+  width: 100%;
+  margin-top: -51px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+.reviews__photo {
+  display: block;
+  margin: 0 auto 0.6rem;
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  border: 4px solid #efefef;
+}
+.reviews__name {
+  margin-bottom: 0.03rem;
+  font-size: 1.6rem;
+  color: #272628;
+  font-weight: 700;
+}
+.reviews__company {
+  margin-bottom: 0.4rem;
+  font-size: 0.94rem;
+  color: #6a696b;
+  font-style: italic;
+  font-weight: 300;
+}
+.reviews__star {
+  width: 13px;
+  height: 13px;
+}
+.reviews__star--unactive {
   opacity: 0.3;
 }
 .news {
@@ -396,6 +472,7 @@ body {
   text-decoration: none;
 }
 .articles {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
@@ -415,8 +492,11 @@ body {
   margin-bottom: 2rem;
 }
 .articles__date {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   width: 77px;
   height: 77px;
@@ -460,12 +540,16 @@ body {
   padding: 1rem 0;
   background-color: #272628;
 }
-.foter__inner {
+.footer__inner {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 .footer__credits {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 .footer__copyright {
@@ -476,7 +560,9 @@ body {
   border-right: 2px solid rgba(106, 105, 107, 0.5);
 }
 .footer__socials {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 .footer__socials a {
@@ -484,7 +570,9 @@ body {
   text-decoration: none;
 }
 .footer__nav {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   font-size: 0.94rem;
 }
@@ -509,6 +597,7 @@ body {
   color: #272628;
 }
 .modal {
+  display: -webkit-box;
   display: flex;
   width: 100%;
   height: 100%;
@@ -528,11 +617,7 @@ body {
   background-color: #fff;
 }
 .modal__dialog--sm {
-  width: 100%;
   max-width: 900px;
-  margin: auto;
-  position: relative;
-  background-color: #fff;
 }
 .modal__close {
   width: 34px;
@@ -545,15 +630,36 @@ body {
   top: 0.9rem;
   right: 0.9rem;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .modal__close:hover {
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .modal__content {
   padding: 5rem 1rem;
 }
+.modal__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #272628;
+  font-weight: 700;
+}
+.modal__title--sm {
+  margin-bottom: 0;
+}
+.modal__subtitle {
+  text-transform: uppercase;
+  font-size: 1.06rem;
+  color: #272628;
+  font-weight: 400;
+}
 .modal-work {
+  display: -webkit-box;
   display: flex;
 }
 .modal-work__preview {
@@ -566,6 +672,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 1;
+  -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
 .modal-work__content {
@@ -614,7 +721,9 @@ body {
 }
 .modal-work__footer {
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   padding: 0 1.8rem 1rem;
   position: absolute;
@@ -631,4 +740,71 @@ body {
   font-size: 0.94rem;
   color: #272628;
   text-transform: uppercase;
+}
+.contact {
+  display: -webkit-box;
+  display: flex;
+  background: url('https://placehold.it/477x700') right center no-repeat;
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+.contact__info {
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.94rem;
+  color: #272628;
+  font-weight: 300;
+}
+.contact__info-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+.contact__info-icon {
+  margin-right: 0.75rem;
+}
+.form__group {
+  margin-bottom: 1.8rem;
+}
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: #272628;
+  font-weight: 700;
+}
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #272628;
+  transition: border-color 0.2s linear;
+}
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: #6a696b;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #6a696b;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
 }

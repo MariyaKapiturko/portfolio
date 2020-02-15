@@ -71,7 +71,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -83,7 +83,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -95,7 +95,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -107,7 +107,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -119,7 +119,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -131,7 +131,7 @@
           <div class="work">
             <img class="img" src="https://placehold.it/370x300" alt="Portfolio">
             <div class="work__content">
-              <div class="work__cat">category</div>
+              <div class="work__category">category</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2020-01-11 16:58">2020</time>
@@ -189,11 +189,11 @@
           <div class="reviews__name">Edward M.</div>
           <div class="reviews__company">Marketing House</div>
           <div class="reviews__rating">
-            <img class="rewiews__star" src="img/star.svg" alt="">
-            <img class="rewiews__star" src="img/star.svg" alt="">
-            <img class="rewiews__star" src="img/star.svg" alt="">
-            <img class="rewiews__star" src="img/star.svg" alt="">
-            <img class="rewiews__star rewiews__star--unactive" src="img/star.svg" alt="">
+            <img class="reviews__star" src="img/star.svg" alt="">
+            <img class="reviews__star" src="img/star.svg" alt="">
+            <img class="reviews__star" src="img/star.svg" alt="">
+            <img class="reviews__star" src="img/star.svg" alt="">
+            <img class="reviews__star reviews__star--unactive" src="img/star.svg" alt="">
           </div>
         </div>
       </div>
@@ -348,7 +348,7 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="foter__inner">
+      <div class="footer__inner">
         <div class="footer__credits">
           <div class="footer__copyright">
             &copy; Mariya Kapiturko, 2020
@@ -403,8 +403,10 @@
             </p>
           </div>
           <div class="modal-work__footer">
-            <button type="button" class="modal-work__footer-btn"><img src="img/left-arrow.svg" height="12px" alt="Arrow">Previous</button>
-            <button type="button" class="modal-work__footer-btn">Next<img src="img/right-arrow.svg" height="12px" alt="Arrow"></button>
+            <button type="button" class="modal-work__footer-btn"><img src="img/left-arrow.svg" height="12px"
+                alt="Arrow">Previous</button>
+            <button type="button" class="modal-work__footer-btn">Next<img src="img/right-arrow.svg" height="12px"
+                alt="Arrow"></button>
           </div>
         </div>
       </div>
@@ -412,10 +414,11 @@
   </div>
 
 
-  <div class="modal" style="display: none;"> 
-    <div class="modal__ dialog modal__dialog--sm">
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog modal__dialog--sm">
       <button type="button" class="modal__close"><img src="img/modal-close.svg" alt="Close"></button>
       <div class="modal__content">
+        <div class="modal__title text-center">Resume</div>
         <img class="img" src="img/resume.jpg" alt="Resume">
         <div class="text-center">
           <a class="btn btn--thin" href="#">Download PDF</a>
@@ -423,6 +426,38 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog modal__dialog--sm">
+      <button type="button" class="modal__close"><img src="img/modal-close.svg" alt="Close"></button>
+      <div class="contact">
+        <div class="contact__left">
+          <div class="modal__title modal__title--sm">let's talk</div>
+          <h4 class="modal__subtitle">call me or send me a request</h4>
+          <ul class="contact__info">
+            <li class="contact__info-item">
+              <img class="contact__info-icon" height="18px" src="img/socials/phone.svg" alt="Info"> +375 (29) 929 45 49</li>
+            <li class="contact__info-item">
+              <img class="contact__info-icon" height="18px" src="img/socials/mail.svg" alt="Info"> mariya.kapiturko@mail.ru</li>
+          </ul>
+          <form class="form" action="/" method="post">
+            <div class="form__group">
+              <label class="form__label" for="form__input-email">Adress e-mail</label>
+              <input class="form__input" id="form__input-email" name="form__input-email" type="text" placeholder="Adress e-mail">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="form__input-text">Request</label>
+              <textarea class="form__textarea" name="form__input-text" id="form__input-text" placeholder="Type your qequest..."></textarea>
+            </div>
+            <div class="text-right">
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>

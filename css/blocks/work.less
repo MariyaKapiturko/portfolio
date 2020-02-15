@@ -4,30 +4,33 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(#000000, .25);
+  -webkit-transition: box-shadow .2s linear;
   transition: box-shadow .2s linear;
 
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 25px rgba(#000000, .25);
   }
-}
 
-.work__content {
-  padding: 1rem .8rem;
-}
+  &__content {
+    padding: 1rem .8rem;
+  }
 
-.work__cat {
-  margin-bottom: .5rem;
-  font-size: .8rem;
-  color: @black;
-  text-transform: uppercase;
-}
+  &__category {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    color: @black;
+    text-transform: uppercase;    
+  }
 
-.work__title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.06rem;
-  color: @black;
-  text-transform: uppercase;
-  font-weight: 700;
+  &__title {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }

@@ -2,21 +2,23 @@
 
 .works {
   margin: 2.8rem 0;
-}
 
-.works__nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.4rem;
-}
+  &__nav {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-bottom: 1.4rem;
 
-.works__nav-link {
-  margin: 0 1.2rem;
-  font-size: 0.8rem;
-  color: rgba(@black, .7);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
+    &-link {
+      margin: 0 1.2rem;
+      font-size: 0.8rem;
+      color: rgba(@black, .7);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

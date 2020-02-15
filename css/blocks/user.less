@@ -1,32 +1,34 @@
 //  main: ../style.less
 
 .user {
+  display: -webkit-box;
   display: flex;
-}
 
-.user__avatar {
-  img {
-    // border-radius: 50%;
-    // border: 2px solid @black;
-    height: 57px;
-    width: 57px;
+  &__avatar {
+    img {
+      // border-radius: 50%;
+      // border: 2px solid @black;
+      height: 57px;
+      width: 57px;    }
+
   }
-}
 
-.user__content {
-  padding-left: 9px;
-  align-items: center;
-}
+  &__content {
+    padding-left: 9px;
+    -webkit-box-align: center;
+            align-items: center;
+  }
 
-.user__name {
-  margin-bottom: 3px;
-  font-size: 1.06rem;
-  line-height: 1.2rem;
-  color: @black;
-  font-weight: 700;
-}
+  &__name {
+    margin-bottom: 3px;
+    font-size: 1.06rem;
+    line-height: 1.2rem;
+    color: @black;
+    font-weight: 700;
+  }
 
-.user__prof {
-  font-size: .8rem;
-  color: rgba(@black, .7);
+  &__prof {
+    font-size: .8rem;
+    color: rgba(@black, .7);
+  }
 }
