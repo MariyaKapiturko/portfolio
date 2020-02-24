@@ -9,6 +9,9 @@
   max-width: 100%;
   height: about;
 }
+.hide {
+  display: none;
+}
 *,
 *:before,
 *:after {
@@ -35,6 +38,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #272628;
+}
+body.no-scroll {
+  overflow: hidden;
 }
 .container {
   width: 100%;
@@ -597,8 +603,7 @@ body {
   color: #272628;
 }
 .modal {
-  display: -webkit-box;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -608,6 +613,7 @@ body {
   top: 0;
   left: 0;
   z-index: 99;
+  overflow-x: hidden;
 }
 .modal__dialog {
   width: 100%;
@@ -615,6 +621,8 @@ body {
   margin: auto;
   position: relative;
   background-color: #fff;
+  transform: scale(0);
+  transition: transform 0.3s linear;
 }
 .modal__dialog--sm {
   max-width: 900px;
@@ -657,6 +665,9 @@ body {
   font-size: 1.06rem;
   color: #272628;
   font-weight: 400;
+}
+.modal.show {
+  display: flex;
 }
 .modal-work {
   display: -webkit-box;
