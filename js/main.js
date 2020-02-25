@@ -1,5 +1,7 @@
 $(function() {
 
+  const worksSlider = $('[data-slider="slick"]');
+
   // фильтрация работ 
   // ======================
   let = filter = $("[data-filter]"); // сохраняем переменные с атрибутом data-filter
@@ -28,6 +30,7 @@ $(function() {
   // ======================
   const modalCall = $("[data-modal]");
   const modalClose = $("[data-close]");
+
   modalCall.on("click", function(event) {
     event.preventDefault(); // убираем обычное поведение ссылки (event)
     
@@ -42,6 +45,8 @@ $(function() {
             transform: "scale(1)"
           }); // ищем в модальном окне элемент с классом modal__dialog и поменять css свойство
     }, 200);
+
+    worksSlider.slick('setPosition');
   });
 
   modalClose.on("click", function(event) {
@@ -76,6 +81,32 @@ $(function() {
 
   $(".modal__dialog").on("click", function(event) { 
     event.stopPropagation();
+  });
+
+  // слайдер
+  // ======================
+  worksSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true
+  });
+
+  $(".slickPrev").on("click", function(event) {
+    event.preventDefault();
+
+    let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+    currentSlider.slick("slickPrev");
+  });
+
+  $(".slickNext").on("click", function(event) {
+    event.preventDefault();
+
+    let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+    currentSlider.slick("slickNext");
   });
 
 });
