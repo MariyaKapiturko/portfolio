@@ -7,7 +7,8 @@
   <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext"
   rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <title>Mariya Kapiturko's portfolio</title>
 </head>
 
@@ -17,7 +18,7 @@
       <div class="header__inner">
         <div class="user">
           <div class="user__avatar">
-            <img src="logo1.png" alt="Avatar">
+            <img src="logo.png" alt="Avatar">
           </div>
           <div class="user__content">
             <div class="user__name">Mariya<br>Kapiturko</div>
@@ -46,12 +47,33 @@
           <h1 class="intro__title">Mariya Kapiturko</h1>
           <div class="intro__text">Junior Frontend Developer</div>
           <div class="social">
-            <a href="#" class="social__link"><img src="img/socials/github.svg" alt="Social"></a>
-            <a href="#" class="social__link"><img src="img/socials/linkedin.svg" alt="Social"></a>
-            <a href="#" class="social__link"><img src="img/socials/mail.svg" alt="Social"></a>
-            <a href="#" class="social__link"><img src="img/socials/phone.svg" alt="Social"></a>
-            <a href="#" class="social__link"><img src="img/socials/skype.svg" alt="Social"></a>
+            <span class="social__item">
+              <a href="#" class="first social__item-link"><img src="img/socials/github.svg" alt="Social"></a>
+              <a href="#" class="second social__item-link social__item-hide"><img src="img/socials/github-color.svg" alt="Social"></a>
+            </span>
+            <span class="social__item">
+              <a href="#" class="social__item-link"><img src="img/socials/linkedin.svg" alt="Social"></a>
+              <a href="#" class="social__item-link social__item-hide"><img src="img/socials/linkedin-color.svg" alt="Social"></a>
+            </span>
+            <span class="social__item">
+              <a href="#" class="social__item-link"><img src="img/socials/mail.svg" alt="Social"></a>
+              <a href="#" class="social__item-link social__item-hide"><img src="img/socials/mail-color.svg" alt="Social"></a>
+            </span>
+            <span class="social__item">
+              <a href="#" class="social__item-link"><img src="img/socials/skype.svg" alt="Social"></a>
+              <a href="#" class="social__item-link social__item-hide"><img src="img/socials/skype-color.svg" alt="Social"></a>
+            </span>
+            <span class="social__item">
+              <a href="#" class="social__item-link"><img src="img/socials/telegram.svg" alt="Social"></a>
+              <a href="#" class="social__item-link social__item-hide"><img src="img/socials/telegram-color.svg" alt="Social"></a>
+            </span>
           </div>
+
+          <div class="animate2">
+            <img class="first" src="img/socials/skype-color.svg" />
+            <img class="second" src="img/socials/skype.svg" />
+          </div>
+
           <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
           <button class="btn" type="button" data-modal="#modal_resume">See my resume</button>
         </div>
@@ -714,5 +736,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

@@ -29,10 +29,29 @@ body {
   }
 }
 
+// ==================
+// VARIABLES & MIXINS
+// ==================
+
+@import "main/vars";
+@import "main/helpers";
+
+// ============
+// DEPENDENCIES
+// ============
+
 @import "vendor/slick";
 
-@import "vars";
-@import "helpers";
+// ==========
+// COMPONENTS
+// ==========
+
+@import "blocks/modal";
+@import "blocks/modal-work";
+
+// ======
+// BLOCKS
+// ======
 
 @import "blocks/container";
 @import "blocks/header";
@@ -49,8 +68,6 @@ body {
 @import "blocks/news";
 @import "blocks/articles";
 @import "blocks/footer";
-@import "blocks/modal";
-@import "blocks/modal-work";
 @import "blocks/contact";
 @import "blocks/form";
 @import "blocks/burger";
